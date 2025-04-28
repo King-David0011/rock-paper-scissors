@@ -1,0 +1,75 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: pop 0.5s ease;
+}
+
+@keyframes pop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.choices {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.choices button {
+    font-size: 24px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50%;
+    background: #ffda77;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.choices button:hover {
+    background: #ffd000;
+    transform: scale(1.1);
+}
+
+.results p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #555;
+}
+
+#winner {
+    font-size: 26px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+.draw {
+    color: blue;
+}
